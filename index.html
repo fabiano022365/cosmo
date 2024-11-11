@@ -7,82 +7,178 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <title>Em busca da cidade perdida</title>
+    <title>Aventura Cósmica</title>
 </head>
 <body>
     <main>
-        <div class="passo ativo" id="passo-0">
-            <img src="img/cenario-passo0.png" alt="">
-            <p>Um dia desses, dentro de um livro da biblioteca da escola, eu descobri uma carta antiga sobre uma cidade perdida, escondida por riquezas e belezas naturais. Nessa carta, a autora deixa algumas pistas para encontrar essa cidade e eu decidi segui-las!</p>
-            <button class="btn-proximo" data-proximo="1">Rio de Janeiro</button>
-            <button class="btn-proximo" data-proximo="2">Pernambuco</button>
+        <!-- Passo 1: Encontro com Galileu -->
+        <div class="passo ativo" id="passo-1">
+            <p>Você começa sua jornada no cosmos, observando as estrelas através de um telescópio. De repente, você encontra Galileu Galilei, que lhe revela uma estrela misteriosa que ele próprio estudou. Ele pede sua ajuda para descobrir mais sobre ela.</p>
+            <button class="btn-proximo" data-proximo="2">Ajudar Galileu com a estrela</button>
+            <button class="btn-proximo" data-proximo="3">Explorar outro planeta primeiro</button>
         </div>
-        <div class="passo" id="passo-1">
-            <p>Você começa sua jornada no Rio de Janeiro, subindo o Pico da Tijuca ao amanhecer para encontrar a primeira pista.</p>
-            <button class="btn-proximo" data-proximo="3">Procurar a pista no topo do pico</button>
-            <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
-        </div>
+
+        <!-- Passo 2: Ajudando Galileu -->
         <div class="passo" id="passo-2">
-            <p>Em Pernambuco, você visita a histórica cidade de Olinda. Na carta, uma das pistas indica que para localizar a entrada para a cidade perdida você deve procurar a próxima pista em um dos pontos turísticos da cidade. Por qual você começa?</p>
-            <button class="btn-proximo" data-proximo="5">Investigar as igrejas antigas</button>
-            <button class="btn-proximo" data-proximo="6">Explorar as praias próximas</button>
+            <p>Você e Galileu começam a investigar a estrela, que parece ter uma flutuação incomum na radiação. Ele sugere que a flutuação pode ser um sinal de vida extraterrestre. Qual a sua decisão?</p>
+            <button class="btn-proximo" data-proximo="4">Seguir as flutuações e viajar até a estrela</button>
+            <button class="btn-proximo" data-proximo="5">Estudar a flutuação a partir de um telescópio mais avançado</button>
         </div>
+
+        <!-- Passo 3: Explorar outro planeta -->
         <div class="passo" id="passo-3">
-            <p>No topo do Pico da Tijuca, você encontra uma antiga inscrição apontando que a próxima pista está
-                localizada no Amazonas.</p>
-            <button class="btn-proximo" data-proximo="7">Seguir para o Amazonas</button>
+            <p>Você decide explorar um planeta próximo. Ele está coberto por uma espessa camada de nuvens, mas parece ser habitável. Ao pousar, você encontra vestígios de uma civilização antiga. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="6">Investigar as ruínas antigas</button>
+            <button class="btn-proximo" data-proximo="7">Explorar a atmosfera do planeta para entender mais sobre suas condições</button>
         </div>
 
+        <!-- Passo 4: Seguir as flutuações -->
         <div class="passo" id="passo-4">
-            <img src="img/cenario-passo4-voltar-casa.png" alt="imagem voltando para casa e desitindo da aventura">
-            <p>Você decide que a aventura é grande demais e volta para casa, mas sempre se pergunta o que teria
-                encontrado.</p>
+            <p>Você viaja até a estrela e encontra um campo gravitacional estranho, que parece ser uma anomalia no espaço. Isso pode ser a chave para um novo entendimento sobre a gravidade. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="8">Explorar a anomalia para coletar dados</button>
+            <button class="btn-proximo" data-proximo="9">Retornar à estação espacial para mais pesquisas</button>
         </div>
 
+        <!-- Passo 5: Estudar a flutuação -->
         <div class="passo" id="passo-5">
-            <p>Nas igrejas de Olinda, você descobre um mapa antigo escondido atrás de um altar, apontando que a próxima
-                pista está no Amazonas.</p>
-            <button class="btn-proximo" data-proximo="7">Viajar para o Amazonas</button>
+            <p>Após analisar a flutuação com equipamentos mais avançados, você descobre que ela está relacionada a um buraco negro distante. Você tem duas opções agora:</p>
+            <button class="btn-proximo" data-proximo="10">Investigar o buraco negro diretamente</button>
+            <button class="btn-proximo" data-proximo="11">Estudar as propriedades do buraco negro a partir de uma distância segura</button>
         </div>
 
+        <!-- Passo 6: Investigar as ruínas -->
         <div class="passo" id="passo-6">
-            <p>Explorando as praias, você encontra uma caverna escondida, mas ela leva a um beco sem saída.</p>
-            <button class="btn-proximo" data-proximo="8">Voltar e explorar as igrejas</button>
+            <p>Nas ruínas antigas, você encontra artefatos que indicam que uma civilização pré-humana tinha um conhecimento avançado sobre as estrelas. Você decide:</p>
+            <button class="btn-proximo" data-proximo="12">Investigar a tecnologia usada por essa civilização</button>
+            <button class="btn-proximo" data-proximo="13">Pesquisar mais sobre as constelações que eles estudavam</button>
         </div>
 
+        <!-- Passo 7: Explorar a atmosfera -->
         <div class="passo" id="passo-7">
-            <p>No Amazonas, a busca pela cidade perdida se intensifica. Você se depara com um rio bifurcado.</p>
-            <button class="btn-proximo" data-proximo="9">Seguir pelo rio à esquerda</button>
-            <button class="btn-proximo" data-proximo="10">Seguir pelo rio à direita</button>
+            <p>Você explora a atmosfera do planeta e encontra uma substância que parece estar alterando a gravidade local. Isso pode ter implicações importantes para a teoria da gravitação de Newton. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="14">Coletar amostras para análise</button>
+            <button class="btn-proximo" data-proximo="15">Estudar o efeito da substância na gravidade diretamente</button>
         </div>
 
+        <!-- Passo 8: Explorar a anomalia -->
         <div class="passo" id="passo-8">
-            <p>De volta às igrejas, você finalmente encontra o mapa antigo. Agora, para o Amazonas!</p>
-            <button class="btn-proximo" data-proximo="7">Seguir para o Amazonas</button>
+            <p>Você decide explorar a anomalia gravitacional e encontra um portal no espaço que parece levar a uma outra galáxia. Isso pode ser uma oportunidade única de aprender sobre o cosmos!</p>
+            <button class="btn-proximo" data-proximo="16">Atravessar o portal para explorar a nova galáxia</button>
+            <button class="btn-proximo" data-proximo="17">Voltar à estação para analisar o portal com mais calma</button>
         </div>
 
+        <!-- Passo 9: Retornar à estação -->
         <div class="passo" id="passo-9">
-            <p>O rio à esquerda leva você a uma cachoeira escondida com inscrições antigas que revelam a entrada da
-                cidade perdida.</p>
-            <button class="btn-proximo" data-proximo="11">Explorar a cidade perdida</button>
+            <p>Ao retornar à estação, você encontra Johannes Kepler, que sugere que as órbitas dos planetas podem revelar mais sobre a anomalia. Ele propõe uma teoria de gravitação que precisa ser testada. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="18">Testar a teoria de Kepler com dados coletados</button>
+            <button class="btn-proximo" data-proximo="19">Investigar mais sobre o portal e seus efeitos gravitacionais</button>
         </div>
 
+        <!-- Passo 10: Investigar o buraco negro -->
         <div class="passo" id="passo-10">
-            <p>O rio à direita termina em uma área pantanosa. Apesar de belas vistas, não há sinais da cidade perdida
-                aqui.</p>
-            <button class="btn-proximo" data-proximo="12">Retornar e tentar o outro rio</button>
+            <p>Você se aproxima do buraco negro e detecta que ele está emitindo radiação cósmica. Isso pode ser uma pista importante sobre a física do espaço-tempo. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="20">Coletar dados sobre a radiação emitida pelo buraco negro</button>
+            <button class="btn-proximo" data-proximo="21">Tentar entrar no buraco negro para explorar mais a fundo</button>
         </div>
 
+        <!-- Passo 11: Estudar o buraco negro -->
         <div class="passo" id="passo-11">
-            <img src="img/cenario-passo11-cidade-perdida.png" alt="encontrando uma cidade maravilhosa perdida no Amazonas">
-            <p>Dentro da cidade perdida, você descobre tesouros inimagináveis e decide se dedicar a estudar e preservar
-                este lugar</p>
+            <p>Você estuda o buraco negro à distância e descobre uma peculiaridade nas suas flutuações que pode ser chave para entender a gravidade universal. Agora, qual será sua próxima ação?</p>
+            <button class="btn-proximo" data-proximo="22">Desenvolver uma nova teoria gravitacional baseada nas flutuações</button>
+            <button class="btn-proximo" data-proximo="23">Investigar um outro buraco negro para comparar os dados</button>
         </div>
 
+        <!-- Passo 12: Investigar a tecnologia -->
         <div class="passo" id="passo-12">
-            <p>Retornando e escolhendo o rio à esquerda, você finalmente encontra a cachoeira escondida e as inscrições
-                que levam à cidade perdida.</p>
-            <button class="btn-proximo" data-proximo="11">Explorar a cidade perdida</button>
+            <p>Você encontra uma máquina antiga nas ruínas que parece manipular a gravidade. Isso poderia ser um grande avanço no estudo da gravidade!</p>
+            <button class="btn-proximo" data-proximo="24">Testar a máquina para entender seu funcionamento</button>
+            <button class="btn-proximo" data-proximo="25">Estudar as inscrições antigas para entender como a civilização a utilizava</button>
+        </div>
+
+        <!-- Passo 13: Estudar as constelações -->
+        <div class="passo" id="passo-13">
+            <p>Você decide estudar as constelações antigas e descobre um alinhamento que pode ser importante para as teorias modernas sobre o cosmos. O que você faz agora?</p>
+            <button class="btn-proximo" data-proximo="26">Investigar o alinhamento das estrelas mais a fundo</button>
+            <button class="btn-proximo" data-proximo="27">Conectar o alinhamento com as observações de Galileu</button>
+        </div>
+
+        <!-- Passo 14: Coletar amostras -->
+        <div class="passo" id="passo-14">
+            <p>Coletando amostras da substância gravitacional, você começa a observar que ela altera o tempo e o espaço ao seu redor. Isso pode ser a chave para a próxima grande teoria da física!</p>
+            <button class="btn-proximo" data-proximo="28">Estudar os efeitos temporais dessa substância</button>
+            <button class="btn-proximo" data-proximo="29">Investigar a substância sob condições extremas</button>
+        </div>
+
+        <!-- Passo 15: Estudar o efeito na gravidade -->
+        <div class="passo" id="passo-15">
+            <p>Você decide estudar os efeitos da substância na gravidade diretamente. Ao fazer isso, você percebe que a gravidade parece funcionar de maneira diferente no planeta, abrindo novos caminhos para a física quântica.</p>
+            <button class="btn-proximo" data-proximo="30">Pesquisar a relação entre a substância e a gravidade quântica</button>
+            <button class="btn-proximo" data-proximo="31">Investigar como isso pode afetar o modelo de Einstein</button>
+        </div>
+
+        <!-- Final: Conclusões possíveis -->
+        <div class="passo" id="passo-16">
+            <p>Você atravessa o portal e encontra uma nova galáxia cheia de novas estrelas e planetas. Esse é um avanço extraordinário para a exploração espacial, revelando muitos segredos do cosmos!</p>
+        </div>
+
+        <div class="passo" id="passo-17">
+            <p>Ao analisar o portal mais a fundo, você descobre que ele é uma distorção no espaço-tempo, uma espécie de buraco de minhoca, permitindo viagens instantâneas entre galáxias. A partir disso, novas descobertas podem ser feitas!</p>
+        </div>
+
+        <div class="passo" id="passo-18">
+            <p>Você testa a teoria de Kepler e confirma que as órbitas dos planetas podem realmente revelar mais sobre a anomalia. A física de Kepler se expande, abrindo portas para novos entendimentos sobre o espaço e a gravitação.</p>
+        </div>
+
+        <div class="passo" id="passo-19">
+            <p>Você investiga mais sobre o portal e encontra provas de que ele pode ser usado para viagens temporais, oferecendo possibilidades ilimitadas para viagens no tempo e no espaço. Uma descoberta revolucionária!</p>
+        </div>
+
+        <div class="passo" id="passo-20">
+            <p>Você coleta dados sobre a radiação do buraco negro e descobre que ele está fornecendo uma chave para entender a origem do cosmos. Isso ajuda a construir uma nova teoria sobre a formação do universo.</p>
+        </div>
+
+        <div class="passo" id="passo-21">
+            <p>Você entra no buraco negro e emerge em uma nova dimensão do espaço-tempo. Agora, você pode começar a estudar os segredos do universo de uma forma que ninguém jamais imaginou antes.</p>
+        </div>
+
+        <div class="passo" id="passo-22">
+            <p>Você desenvolve uma nova teoria gravitacional baseada nas flutuações detectadas. Essa teoria pode revolucionar a física moderna e mudar a forma como entendemos a gravidade!</p>
+        </div>
+
+        <div class="passo" id="passo-23">
+            <p>Você investiga outro buraco negro e encontra padrões semelhantes. Agora, você consegue traçar uma nova compreensão sobre como buracos negros influenciam o espaço-tempo.</p>
+        </div>
+
+        <div class="passo" id="passo-24">
+            <p>Você testa a máquina e consegue manipular a gravidade ao seu redor. Isso pode levar à criação de tecnologias que alterem a forma como viajamos pelo espaço!</p>
+        </div>
+
+        <div class="passo" id="passo-25">
+            <p>Você estuda as inscrições e decifra uma antiga técnica de manipulação gravitacional. Isso pode ser um avanço para a ciência moderna, revelando tecnologias perdidas de civilizações antigas.</p>
+        </div>
+
+        <div class="passo" id="passo-26">
+            <p>Você investiga o alinhamento das estrelas e descobre um padrão cósmico que pode ser chave para a compreensão das origens do universo.</p>
+        </div>
+
+        <div class="passo" id="passo-27">
+            <p>Você conecta o alinhamento das estrelas com as observações de Galileu e encontra provas de que o cosmos é mais interconectado do que jamais imaginamos!</p>
+        </div>
+
+        <div class="passo" id="passo-28">
+            <p>Você estuda os efeitos temporais da substância e descobre como ela pode alterar o fluxo do tempo, criando a possibilidade de viagens no tempo!</p>
+        </div>
+
+        <div class="passo" id="passo-29">
+            <p>Você investiga a substância sob condições extremas e percebe que ela tem o poder de alterar as leis da física, oferecendo novas perspectivas para a ciência!</p>
+        </div>
+
+        <div class="passo" id="passo-30">
+            <p>Você pesquisa a relação entre a substância e a gravidade quântica, descobrindo como ela pode ser usada para criar uma nova teoria da gravitação quântica!</p>
+        </div>
+
+        <div class="passo" id="passo-31">
+            <p>Você investiga como a substância pode afetar o modelo de Einstein e descobre novas dimensões da relatividade, criando uma nova forma de entender o espaço-tempo!</p>
         </div>
     </main>
     <script src="script.js"></script>
